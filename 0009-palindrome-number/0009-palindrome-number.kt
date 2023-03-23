@@ -1,5 +1,3 @@
 class Solution {
-    fun isPalindrome(x: Int): Boolean {
-        return x.toString() == x.toString().reversed()
-    }
+    fun isPalindrome(x: Int): Boolean = x.toString() == x.toString().reversed()
 }
