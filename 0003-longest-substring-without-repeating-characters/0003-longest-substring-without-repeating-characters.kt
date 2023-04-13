@@ -7,7 +7,7 @@ class Solution {
         return s.toCharArray().mapIndexed { index, ch ->
             start = max(start, (map[ch] ?: -1) + 1)
             map[ch] = index
-            return@mapIndexed index - start + 1
+            index - start + 1
         }.maxOrNull() ?: 0
     }
 }
