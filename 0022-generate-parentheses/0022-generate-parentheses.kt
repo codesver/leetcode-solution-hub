@@ -10,9 +10,9 @@ class Solution {
 
     private fun add(stack: Stack<String>, left: Int, right: Int, history: String) {
         if (left + right == 0) {
-            if (stack.isEmpty()) list.add(history)
+            list.add(history)
         } else {
-            if (left <= right) {
+            if (left <= right && left != 0) {
                 stack.push("(")
                 add(stack, left - 1, right, "$history(")
                 stack.pop()
